@@ -1,11 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROTW Artworks Gallery</title>
-</head>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>ROTW 2021 Tanzania</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/rotwtz21/css/w3.css">
+        <link rel="stylesheet" href="/rotwtz21/css/eni_css.css">
+        <link rel="stylesheet" href="/rotwtz21/css/fa-4.7.0/css/font-awesome.min.css">
+
+        <style>
+            body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+            body, html {
+            height: 100%;
+            color: #777;
+            line-height: 1.8;
+            }
+
+            .w3-wide {letter-spacing: 10px;}
+            .w3-hover-opacity {cursor: pointer;}
+        </style>
+    </head>
+
 <body>
-    Image gallery og original and combined images
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-center">
+  <div class="w3-bar w3-light-grey" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <i class="fa fa-bars"></i></a>
+    <a href="/rotwtz21/index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Home</a>
+    <a href="/rotwtz21/en/gallery.html" class="w3-bar-item w3-button  w3-teal w3-hide-small"><i class="fa fa-image"></i> Image Gallery</a>
+    <a href="/rotwtz21/en/std.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-gamepad"></i> Standard 3D</a>
+<!--<a href="/rotwtz21/en/vr.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-simplybuilt"></i>Virtual Reality</a>
+    <a href="/rotwtz21/en/ar.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-video-camera"></i>Augmented Reality</a> -->
+    <a href="/rotwtz21/en/about.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> About</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="/rotwtz21/en/gallery.html" class="w3-bar-item w3-button w3-teal" onclick="toggleFunction()"> Image Gallery</a>
+    <a href="/rotwtz21/en/std.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> Standard 3D</a>
+<!--<a href="/rotwtz21/en/vr.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Virtual Reality</a>
+    <a href="/rotwtz21/en/ar.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Augmented Reality</a> -->
+    <a href="/rotwtz21/en/about.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> About</a>
+    <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">ABOUT RIVERS OF THE WORLD EXHIBITION 2021</h3>
+    <p class="w3-center"><em>49 Paintings . 30 young artists . 5 Secondary Schools</em></p>
+    <p class="w3-center">
+    Here a 1 paragraph summary of the theme, work done, etc. dolor in reprehenderit in voluptate velit esse cillum dolore eu 
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+    </p>
+</div>
+
+<div class="w3-content w3-container w3-padding-12" id="posters">
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m2">
+        <img src="/rotwtz21/img/rotw_0.jpg" style="width:100%" alt="ROTW 2021.">
+        </div>
+        <div class="w3-col m2">
+        <img src="/rotwtz21/img/dund/dunda_0.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dunda Secondary School poster (Coast Region).">
+        </div>
+
+        <div class="w3-col m2">
+        <img src="/rotwtz21/img/jang/jangwani_0.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jangwani Secondary School poster (Dar-es-Salaam Region).">
+        </div>
+
+        <div class="w3-col m2">
+        <img src="/rotwtz21/img/kika/kikaro_0.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kikaro Secondary School poster (Coast Region).">
+        </div>
+
+        <div class="w3-col m2">
+        <img src="/rotwtz21/img/pugu/pugu_0.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Pugu Secondary School poster (Daalaam Region).">
+        </div>
+
+        <div class="w3-col m2">
+        <img src="/rotwtz21/img/zing/zinga_0.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Zinga Secondary School poster (Coast Region).">
+        </div>
+    </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-48" id="portfolio">
+    <h3 class="w3-center">STUDENT DRAWINGS</h3>
+    <p class="w3-center"><em>Selected student artworks composited to create school poster.<br> Click on the images to make them bigger</em></p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <!-- dunda-->
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+            <img src="/rotwtz21/img/dund/dunda01_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Joygracious Matasio">
+        </div>
+        <div class="w3-col m3">
+            <img src="/rotwtz21/img/dund/dunda04_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Joygracious Matasio">
+        </div>
+        <div class="w3-col m3">
+            <img src="/rotwtz21/img/dund/dunda05_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Henrique Emmanuel">
+        </div>
+        <div class="w3-col m3">
+            <img src="/rotwtz21/img/dund/dunda07_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dunda Secondary School">
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center">
+        <div class="w3-col m3">
+            <img src="/rotwtz21/img/dund/dunda10_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Prince Albert">
+        </div>
+        <div class="w3-col m3">
+            <img src="/rotwtz21/img/dund/dunda11_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Prince Albert">
+        </div>
+        <div class="w3-col m3">
+            <img src="/rotwtz21/img/dund/dunda12_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Prince Albert">
+        </div>
+        <div class="w3-col m3">
+            <img src="/rotwtz21/img/dund/dunda14_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dunda Secondary School">
+        </div>
+    </div>
+    <!-- Jangwani-->
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/jang/jangwani01_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Aisha Ahmad">
+        </div>
+
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/jang/jangwani02_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jangwani Secondary School">
+        </div>
+
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/jang/jangwani03_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kulwa Tamatama">
+        </div>
+
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/jang/jangwani04_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Anadelyse Mwansasu">
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/jang/jangwani05_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Cindy Lyimo">
+        </div>
+
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/jang/jangwani06_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Neema Mfuru">
+        </div>
+
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/jang/jangwani07_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Glorie Olomi">
+        </div>
+    </div>
+    <!-- kikaro-->
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/kika/kikaro01_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kikaro Secondary School">
+        </div>
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/kika/kikaro02_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kikaro Secondary School">
+        </div>
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/kika/kikaro03_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Kikaro Secondary School">
+        </div>
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/kika/kikaro04_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Hudhaifa Hashim">
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/kika/kikaro05_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+        </div>
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/kika/kikaro06_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+        </div>
+    </div>
+    <!-- Pugu-->
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/pugu/pugu01_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Donnely Sylvester">
+        </div>
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/pugu/pugu02_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bright Samwel">
+        </div>
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/pugu/pugu03_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Life Jonathan">
+        </div>
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/pugu/pugu04_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ahsante Davusi">
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/pugu/pugu05_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Donnely Sylvester">
+        </div>
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/pugu/pugu06_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bright Samwel">
+        </div>
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/pugu/pugu07_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Life Jonathan">
+        </div>
+    </div>
+    <!-- Zinga-->
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/zing/zinga01_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Elizabeth Richard">
+        </div>
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/zing/zinga02_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rajabu Amiri">
+        </div>
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/zing/zinga03_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Daniel Charles Jacson">
+        </div>
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/zing/zinga04_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Felix Kizinga">
+        </div>
+    </div>
+    <div class="w3-row-padding w3-center w3-section">
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/pugu/zinga05_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Johari Juma">
+        </div>
+        <div class="w3-col m3">
+        <img src="/rotwtz21/img/pugu/zinga06_web.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Salimu Mwinjuma">
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-display-bottommiddle w3-center w3-teal w3-opacity w3-hover-opacity-off">
+    <div class="w3-padding-large w3-text-white">
+        <p>Curated by <a href="https://mediaone.aiditz.net">MediaOne Multimedia</a> for <a href="https://www.britishcouncil.or.tz/">British Council - Tanzania</a> and <a href="https://thamesfestivaltrust.org/read-watch-listen/rivers-of-the-world-2020/">Thames Festival Trust</a>.</p>
+    </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
 </body>
 </html>
