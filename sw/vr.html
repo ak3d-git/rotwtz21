@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="/rotwtz21/css/eni_css.css">
         <link rel="stylesheet" href="/rotwtz21/css/fa-4.7.0/css/font-awesome.min.css">
 
+        <script src="/rotwtz21/fwk/aframe-master.1.0.4.min.js"></script>
+
         <style>
             body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
             body, html {
@@ -29,19 +31,19 @@
         <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
         <i class="fa fa-bars"></i></a>
         <a href="/rotwtz21/index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> Nyumbani</a>
-        <a href="/rotwtz21/sw/picha.html" class="w3-bar-item w3-button  w3-teal w3-hide-small"><i class="fa fa-image"></i> Picha</a>
-        <a href="/rotwtz21/sw/std.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-gamepad"></i> Tembea 3D</a>
-        <!--<a href="/rotwtz21/sw/vr.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-simplybuilt"></i>Virtual Reality</a>
-        <a href="/rotwtz21/sw/ar.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-video-camera"></i>Augmented Reality</a> -->
+        <a href="/rotwtz21/sw/picha.html" class="w3-bar-item w3-button  w3-hide-small"><i class="fa fa-image"></i> Picha</a>
+        <a href="/rotwtz21/sw/std.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-gamepad"></i> Tembelea Kijiji </a>
+        <a href="/rotwtz21/sw/vr.html" class="w3-bar-item w3-button w3-teal w3-hide-small"><i class="fa fa-simplybuilt"></i>360 Picha VR</a>
+<!--        <a href="/rotwtz21/sw/ar.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-video-camera"></i>Augmented Reality</a> -->
         <a href="/rotwtz21/sw/kuhusu.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-users"></i> Kuhusu</a>
       </div>
     
       <!-- Navbar on small screens -->
       <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-        <a href="/rotwtz21/sw/picha.html" class="w3-bar-item w3-button w3-teal" onclick="toggleFunction()"> Picha</a>
+        <a href="/rotwtz21/sw/picha.html" class="w3-bar-item w3-button " onclick="toggleFunction()"> Picha</a>
         <a href="/rotwtz21/sw/std.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> Tembea 3D</a>
-        <!--<a href="/rotwtz21/sw/vr.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Virtual Reality</a>
-        <a href="/rotwtz21/sw/ar.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Augmented Reality</a> -->
+        <a href="/rotwtz21/sw/vr.html" class="w3-bar-item w3-teal  w3-button" onclick="toggleFunction()">Virtual Reality</a>
+<!--        <a href="/rotwtz21/sw/ar.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Augmented Reality</a> -->
         <a href="/rotwtz21/sw/kuhusu.html" class="w3-bar-item w3-button" onclick="toggleFunction()"> Kuhusu</a>
         <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
       </div>
@@ -50,6 +52,11 @@
 <div class="w3-content w3-container w3-padding-64" id="standard3d">
     <h3 class="w3-center">michezo ya VR</h3>
 </div>
+
+<!-- Panorama -->
+<a-scene>
+    <a-sky src="/rotwtz21/img/360_village exhibition.jpg" rotation="0 -130 0"></a-sky>
+</a-scene>
 
 <!-- Footer -->
 <footer class="w3-container w3-bottom w3-center w3-teal w3-opacity w3-hover-opacity-off">
